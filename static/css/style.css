@@ -1,0 +1,72 @@
+.container-main {
+    width: 75%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.flex-blackjack-row-1 , .flex-blackjack-row-2 , .flex-blackjack-row-3, .flex-blackjack-row-text {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-family:'Segoe UI';
+    flex-direction: row;
+    justify-content: space-around;
+    background: url('C:/Users/kpspr/Desktop/UNIPR/JavascriptCourse/JavascriptChallanges/static/images/greenbackground.jpg');
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2 {
+    background: url('C:/Users/kpspr/Desktop/UNIPR/JavascriptCourse/JavascriptChallanges/static/images/greenbackground.jpg');
+    color: white; 
+}
+
+.flex-blackjack-title {
+    background: url('C:/Users/kpspr/Desktop/UNIPR/JavascriptCourse/JavascriptChallanges/static/images/greenbackground.jpg');
+    color: rgb(247, 208, 36); 
+    height: 50px;
+}
+
+.flex-blackjack-row-1 div{
+    padding: 10px;
+    flex: 1; 
+    text-align: center;
+    height: 400px;
+}
+
+.flex-blackjack-row-1 img {
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+    padding: 10px; 
+    margin: 10px;
+}
+
+table {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#win-th {
+    background: lightgreen;
+}
+
+#loss-th {
+    background: lightcoral;
+}
+
+#draw-th {
+    background: yellow;
+}
+
+.button-text {
+    display: inline;
+    color: white;
+    padding: 20px;
+    font-size: large;
+}
+
+#hitButton, #standButton, #dealButton {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>JavaScript Project</title>
+</head>
+
+<body>
+    <!--DIV PRINCIPALE-->
+    <div class="container-main">
+        
+        <!--DIV TITOLO-->
+        <div class="flex-blackjack-title">
+            <h3><span id="blackjack-results" style="font-family:Impact; font-size: 45px;"> ★ THE BLACKJACK GAME ★ </span></h3>
+        </div>
+
+        <!--DIV TABELLA DI GIOCO-->
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <!--DIV BOTTONI DI GIOCO-->
+        <div class="flex-blackjack-row-2">
+            <div>
+                <input type="image" id="blackjack-hit-button" src="static/images/hit.png"/>
+                <input type="image" id="blackjack-stand-button" src="static/images/stand.png" />
+                <input type="image" id="blackjack-deal-button" src="static/images/deal.png" />
+            </div>
+        </div>
+
+        <!--DIV TESTO BOTTONI DI GIOCO-->
+        <div class="flex-blackjack-row-text">
+            <div>
+                <h5 id="hitButton" class="button-text">Hit</h5> 
+                <h5 id="standButton" class="button-text">  Stand</h5> 
+                <h5 id="dealButton" class="button-text">Deal</h5>
+            </div>
+        </div>
+
+        <!--DIV TABELLA DEI RISULTATI-->
+        <div class="flex-blackjack-row-3">
+            <table class="table table-bordered table-light">
+                <thead class="thead-dark">
+                  <tr>
+                    <th id="win-th" scope="col">Wins</th>
+                    <th id="loss-th" scope="col">Losses</th>
+                    <th id="draw-th" scope="col">Draw</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+    
+    <!--SCRIPT BLACKJACK-->
+    <script src="static/js/script.js"></script>
+
+</body>
+</html>
